@@ -1,7 +1,7 @@
 <template>
   <div>
     <Form ref="form" :rules="formValidate" :label-width="90" :model="form">
-          <FormItem label="品种" prop="kind">
+          <FormItem label="品种种" prop="kind">
             <Input v-model="form.kind" />
           </FormItem>
           <FormItem label="名字" prop="name">
@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-  import { peonyApi } from '@/api/peony';
+import { peonyApi } from '@/api/peony';
   export default {
     name: 'CodeReviewListForm',
     components: {

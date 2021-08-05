@@ -22,7 +22,7 @@ export const error = [
   },
   {
     path: '*',
-    name: 'http://localhost:8080/#employee/role-employee-manage',
+    name: 'http://0.0.0.0:8080/#employee/role-employee-manage',
     meta: {
       hideInMenu: true,
       access: true,

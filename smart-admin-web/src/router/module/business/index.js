@@ -3,6 +3,7 @@ import Main from '@/components/main';
 
 import { peony } from './peony';
 import { emailSetting } from './email';
+import {employee} from "../system/employee";
 import { keepAlive } from './keep-alive';
 import { notice } from './notice';
 import { threeRouter } from './three-router';
@@ -20,10 +21,11 @@ export const business = [
     },
     children: [
       ...peony,
-      ...emailSetting,
-      ...keepAlive,
-      ...notice,
-      ...threeRouter
+      ...employee
+      //...emailSetting,
+      //...keepAlive,
+      //...notice,
+      //...threeRouter
     ]
   }
 ];

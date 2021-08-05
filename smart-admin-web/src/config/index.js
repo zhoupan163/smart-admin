@@ -1,5 +1,6 @@
 console.log('api url : ', process.env.VUE_APP_URL);
 console.log('websocket url : ', process.env.VUE_APP_SOCKET_URL);
+
 export default {
   /**
    * @description 配置显示在浏览器标签的title
@@ -33,6 +34,15 @@ export default {
     'error-store': {
       showInHeader: true, // 设为false后不会在顶部显示错误日志徽标
       developmentOff: true // 设为true后在开发环境不会收集错误信息，方便开发中排查错误
+    }
+  },
+  proxyTable: {
+    "/api":{
+      target: 'http://127.0.0.1:8080',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': ''
+      }
     }
   }
 };

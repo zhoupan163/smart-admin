@@ -65,6 +65,8 @@ Vue.prototype.$config = config;
 /**
  * 注册指令
  */
+
+Vue.prototype.$Api = '/api';
 importDirective(Vue);
 // Vue.directive('clickOutside', clickOutside);
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.lab1024.smartadmin.module.business.label.dao.LabelTaskDao">
+
+    <resultMap id="LabelTaskVO" type="net.lab1024.smartadmin.module.business.label.domain.vo.LabelTaskVO"></resultMap>
+
+    <select id="queryByPage" resultMap="LabelTaskVO">
+        select
+          task_id,
+          project_id,
+          task_name,
+          create_time,
+          image_size,
+          group_id,
+          status
+        from px_dp_da_task
+
+    </select>
+</mapper>
+

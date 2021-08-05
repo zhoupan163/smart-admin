@@ -1,7 +1,9 @@
 package net.lab1024.smartadmin;
 
+import net.lab1024.smartadmin.module.business.label.domain.entity.Passenger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -22,7 +24,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
 public class SmartAdminApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SmartAdminApplication.class, args);
     }
